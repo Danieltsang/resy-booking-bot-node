@@ -1,0 +1,16 @@
+{
+  "name": "resy-booking-bot-node",
+  "version": "1.0.0",
+  "description": "Script for booking Resy reservations via their API",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines" : { "node" : ">=10.14.2" },
+  "author": "Daniel Tsang",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "lodash": "^4.17.20"
+  }
+}
