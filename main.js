@@ -38,7 +38,10 @@ async function main() {
 
     return { user, reservations };
   } catch (err) {
-    console.log('unexpected err', err);
+    console.log(
+      'unexpected err',
+      (err && err.response && err.response.data) || err,
+    );
   }
 }
 

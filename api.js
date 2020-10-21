@@ -25,7 +25,7 @@ class API {
       },
     });
 
-    return res.data.results.venues[0].slots;
+    return _.get(res, 'data.results.venues[0].slots', []);
   }
 
   async getReservationDetails(reservation) {

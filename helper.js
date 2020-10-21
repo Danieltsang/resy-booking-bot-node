@@ -1,11 +1,13 @@
 const config = require('./config');
 
+const hasTimeslot = timeSlot => config.TIMES.includes(timeSlot);
+const isMatchingDiningType = type => {
+  if (!config.DINING_TYPE) return true;
+  return type === config.DINING_TYPE;
+};
+
 function isReservationMatch({ reservation, timeSlot }) {
-  return (
-    config.TIMES.includes(timeSlot) &&
-    config.DINING_TYPE &&
-    reservation.config.type === config.DINING_TYPE
-  );
+  return hasTimeslot(timeSlot) && isMatchingDiningType(reservation.config.type);
 }
 
 module.exports = { isReservationMatch };
