@@ -15,6 +15,8 @@ const instance = axios.create({
 const api = new API({ instance });
 
 async function main() {
+  helper.printConfig(config);
+
   try {
     const user = await api.findUser();
     const reservations = await api.findReservations();
