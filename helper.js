@@ -10,8 +10,4 @@ function isReservationMatch({ reservation, timeSlot }) {
   return hasTimeslot(timeSlot) && isMatchingDiningType(reservation.config.type);
 }
 
-function printConfig(conf) {
-  console.log(JSON.stringify(conf, null, 2));
-}
-
-module.exports = { isReservationMatch, printConfig };
+module.exports = { isReservationMatch };

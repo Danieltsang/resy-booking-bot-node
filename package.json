@@ -6,11 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "engines" : { "node" : ">=10.14.2" },
+  "engines": {
+    "node": ">=10.14.2"
+  },
   "author": "Daniel Tsang",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.20.0",
-    "lodash": "^4.17.20"
+    "axios": "^1.3.2",
+    "lodash": "^4.17.20",
+    "signale": "^1.4.0"
   }
 }
