@@ -27,9 +27,11 @@ DINING_TYPE = If you know the dining type, you can enter this variable e.g `Outd
 You must have node installed to run this script.
 
 1. Open `config.js` and fill in each variable.
-2. Run `node main.js`
+2. Run `npm install`.
+2. Run `node main.js`.
+
+You can start running this script prior to the release time of the reservations. It will retry up to 10 times with 1 second sleeps in between so you can run this script 5 seconds before the release tme..
 
 If you see a message like `booked! 18:00:00`, that means you snagged a time. Otherwise, there were no available reservations that matched your time preferences or all reservations are already booked.
-
 
 Note: Not all restaurants release reservations at 12:00am.
