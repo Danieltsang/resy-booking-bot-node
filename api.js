@@ -8,6 +8,12 @@ class API {
     this.instance = opts.instance;
   }
 
+  async findVenue(name) {
+    const res = await this.instance.get(`/3/venue?url_slug=${name}&location=ny`);
+
+    return res.data;
+  }
+
   async findUser() {
     const res = await this.instance.get('/2/user');
 
