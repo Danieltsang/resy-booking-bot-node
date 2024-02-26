@@ -1,5 +1,7 @@
 # Resy Reservation Script
 
+Note: The booking script no longer works. Resy may have figured out a way to prevent API calls to their booking API outside of their website and mobile app.
+
 Not so much a bot yet but a convenient and efficient method of booking a reservation through resy without using their website.
 
 It reduces any time spent clicking through their platform and calls Resy's API directly to snatch a reservation.
@@ -28,7 +30,7 @@ You must have node installed to run this script.
 
 1. Open `config.js` and fill in each variable.
 2. Run `npm install`.
-2. Run `node main.js`.
+2. Run `npm run book`.
 
 You can start running this script prior to the release time of the reservations. It will retry up to 10 times with 1 second sleeps in between so you can run this script 5 seconds before the release tme..
 
