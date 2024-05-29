@@ -1,6 +1,6 @@
 # Resy Reservation Script
 
-Note: The booking script no longer works. Resy may have figured out a way to prevent API calls to their booking API outside of their website and mobile app.
+Note: The booking script no longer works. Resy prevents requests to their booking API outside of their website and mobile app.
 
 Not so much a bot yet but a convenient and efficient method of booking a reservation through resy without using their website.
 
